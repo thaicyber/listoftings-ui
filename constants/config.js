@@ -1,0 +1,5 @@
+module.exports = {
+  RESULTS_PER_PAGE: 10,
+  GOOGLE_ANALYTICS_ID: process.env.GOOGLE_ANALYTICS_ID,
+  GOOGLE_MAPS_KEY: "AIzaSyAA9VX5bdp5zWcGnonTfmOU5kWGKTqaOfQ",
+};

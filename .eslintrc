@@ -1,0 +1,17 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "jest": true
+  },
+  "rules": {
+    "quote-props": 0,
+    "no-underscore-dangle": 0,
+    "camelcase": 0,
+    "max-len": 0,
+    "no-unused-vars": ["error", {"args": "after-used"}],
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": 0,
+    "react/no-did-mount-set-state": 1
+  }
+}

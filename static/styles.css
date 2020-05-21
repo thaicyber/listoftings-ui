@@ -1,0 +1,731 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  line-height: 1.4;
+  color: #111;
+  background: #f1f1f1;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+img {
+  background: #fff;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h1 {
+  margin: 0 0 2rem 0;
+}
+h2, h3 {
+  font-weight: normal;
+  margin: 0 0 1rem 0;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+a {
+  color: #eb3336;
+}
+
+hr {
+  border: #eb3336 0 solid;
+  border-bottom-width: 1px;
+  margin: 0;
+}
+
+nav {
+  margin: 0 50px;
+  font-size: 0.85rem;
+  line-height: 1;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+small {
+  color: #999;
+}
+
+blockquote {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  font-style: italic;
+}
+
+button {
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  font-size: 1rem;
+  background: #ff002a;
+  border: 1px solid #ff002a;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: rgba(255, 0, 42, 0.6);
+}
+
+button:active {
+  background: #fff;
+  color: #ff002a;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #aaa;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #aaa;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #aaa;
+}
+
+.profile__heading {
+  margin-bottom: 0;
+}
+
+.content {
+  padding: 2.5rem 4.5rem;
+}
+
+.content--fade-in {
+  animation: fadeIn 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.content--fade-in--fast {
+  animation: fadeIn 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes fadeIn {
+    0%  {
+      opacity: 0;
+    }
+    100%  {
+      opacity: 1;
+    }
+}
+
+@keyframes rotateForever {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg); }
+}
+
+.spinner {
+  position: relative;
+  animation: rotateForever 0.75s linear infinite;
+  margin-top: 4px;
+  height: 1em;
+  width: 1em;
+  border: 2px solid #fff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.footer {
+  margin: 4rem 0 0 0;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+}
+
+.list-inline {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  vertical-align: top;
+}
+
+.thumb {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  margin: 0 0 1rem 0;
+  background: white;
+}
+
+.thumb__item {
+  margin-right: 1rem;
+}
+
+.thumb__item__heading {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.thumb__item__img {
+  float: left;
+  width: 150px;
+  height: 150px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.thumb:hover .thumb__item__img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.search-form {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.search-form .react-autosuggest__container {
+  flex: 1 1 auto;
+}
+
+.search-form button {
+  width: 170px;
+}
+
+.content-section {
+  margin: 0 0 2rem 0;
+}
+
+.pitch-form {}
+.pitch-form p,
+.pitch-form label {
+  margin: 0 20px 8px 0;
+  display: inline-block;
+}
+.pitch-form textarea,
+.pitch-form input[type=text] {
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+  font-size: inherit;
+  padding: 12px 20px;
+  border: 1px solid #fff;
+}
+.pitch-form textarea:focus,
+.pitch-form input[type=text]:focus {
+  border: 1px solid #999;
+}
+.pitch-form input[type=radio] {
+  margin-right: 8px;
+}
+.pitch-form input[type=radio]:focus {
+  outline: 1px solid #999;
+}
+.pitch-form button {
+  padding: 1rem;
+  width: 150px;
+}
+
+.pitch-form__item {
+  margin: 0 0 1rem 0;
+}
+
+.pitch-form__list {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.home-h1 {
+  font-size: 1rem;
+  margin: -3rem 0 4rem 0;
+}
+.home-hero-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-hero-links a {
+  text-decoration: none;
+}
+
+.home-hero-links__box {
+  flex: 1;
+  position: relative;
+}
+
+.home-hero-links h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 2rem 0;
+  color: #111;
+  display: inline-block;
+}
+
+.button-circle {
+  display: inline-flex;
+  cursor: pointer;
+  position: absolute;
+  left: 140px;
+  padding: 0 0 0 13px;
+  align-self: flex-end;
+  align-items: center;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1px solid #ff0029;
+  border-radius: 50%;
+  background: #ff0029;
+  color: #fff;
+  height: 36px;
+  width: 36px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.home-hero-links a:hover .button-circle {
+  opacity: 0.7;
+}
+
+.button-circle--open,
+.button-circle:active {
+  color: #ff0029;
+  background: transparent;
+}
+
+.serif {
+  font-family: Georgia, serif;
+}
+
+/*
+  Lawyer page
+*/
+
+.contact-details {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.25rem;
+  background: #f1f1f1;
+}
+
+.contact-details:not(.contact-details--open):hover {
+  background: #fff;
+  background: #f5f5f5;
+}
+
+.contact-details--open {
+  cursor: inherit;
+  background: transparent;
+}
+
+/*
+ Search results
+*/
+
+.search-results {
+  list-style: none;
+  padding: 0;
+}
+
+.results-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+
+Specialities
+
+*/
+
+.specialities {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.specialities__item {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.specialities__link {
+  position: relative;
+  font-size: 2rem;
+  line-height: 1;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  background: #fff;
+  color: #999;
+  transition: all 0.2s ease-out;
+}
+
+.specialities__link:hover .specialities__link__text {
+  color: #eb3336;
+}
+
+.specialities__item:nth-child(even) .specialities__link {
+  margin: 0 0 0.5rem 0;
+}
+
+.specialities__item:nth-child(odd) .specialities__link {
+  margin: 0 0.5rem 0.5rem 0;
+}
+
+.specialities__link__text {
+  margin-bottom: 0.5rem;
+}
+.specialities__link__link {
+  font-size: 10px;
+  color: #eb3336;
+}
+
+/*
+
+React Autosuggest
+
+*/
+.react-autosuggest__container {
+  display: inline-block;
+  position: relative;
+}
+
+.react-autosuggest__input {
+  border: 1px solid #fff;
+  border-right: solid #ddd 1px;
+  width: 100%;
+  line-height: 56px;
+  height: 56px;
+  padding: 0 8px 0 20px;
+  font-size: inherit;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+  border: 1px solid #999;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-width: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 56px;
+  width: 100%;
+  border: 1px solid #999;
+  border-top-width: 0;
+  background-color: #fff;
+  color: #666;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestions-list b {
+  /*font-weight: normal;
+  color: #ff0029;
+  color: #111;*/
+}
+
+.react-autosuggest__suggestion {
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #f1f1f1;
+}
+
+/* animation */
+.react-autosuggest__suggestions-container {
+  transition: all 2s cubic-bezier(0.19, 1, 0.22, 1);
+  max-height: 0;
+  opacity: 0;
+}
+
+/*
+  React Responsive Select - Default styles
+*/
+.rrs {
+  font-family: sans-serif;
+  position: relative;
+  box-sizing: border-box;
+}
+.rrs *,
+.rrs *:before,
+.rrs *:after {
+  box-sizing: border-box;
+}
+.rrs__button {
+  color: #555;
+  position: relative;
+  cursor: pointer;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rrs__button--disabled {
+  color: #999999;
+  background: #f5f5f5;
+  cursor: default;
+}
+.rrs__button:focus {
+  outline: 0;
+}
+.rrs--options-visible  .rrs__button {
+  border-radius: 4px 4px 0 0;
+}
+.rrs__button + .rrs__options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid #999;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 4px 4px;
+  top: 44px;
+  left: 0;
+  right: 0;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.rrs--options-visible .rrs__options {
+  height: auto;
+  visibility: visible;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  max-height: 230px;
+}
+/*
+  Open in a modal when smaller potentially touch screen
+*/
+@media screen and (max-width: 768px) {
+  .rrs {
+    position: static;
+  }
+   .rrs.rrs--options-visible:after {
+    content: '';
+    cursor: pointer;
+    position: fixed;
+    animation: fadeIn 0.3s ease forwards;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+   .rrs--options-visible .rrs__options {
+    max-height: initial;
+    position: fixed;
+    font-size: 1.25rem;
+    width: auto;
+    left: 1rem;
+    right: 1rem;
+    top: 15%;
+    bottom: 1rem;
+    border: 0;
+    border-radius: 4px;
+  }
+}
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.rrs__option {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  margin: 0;
+}
+.rrs__option * {
+  pointer-events: none;
+}
+.rrs__option:focus {
+  outline: 1px solid #e0e0e0;
+}
+.rrs__option:hover {
+  background: #f5f5f5;
+  color: #0273b5;
+}
+.rrs__option:active {
+  background: #e1f5fe;
+}
+.rrs__option.rrs__option--next-selection {
+  background: #f1f8fb;
+  color: #0273b5;
+}
+.rrs__option.rrs__option--selected {
+  color: #0273b5;
+}
+.rrs__option.rrs__option--disabled {
+  color: #999999;
+  background: #f5f5f5;
+  cursor: default;
+}
+.rrs__option.rrs__option--header {
+  color: #666666;
+  cursor: default;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #f5f5f5;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.rrs__label {
+  padding: 0 2rem 0 1rem;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: inherit;
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.rrs__label * {
+  pointer-events: none;
+}
+.rrs--options-visible .rrs__label,
+.rrs__button:focus .rrs__label {
+  outline: 0;
+  border: 1px solid #999;
+}
+.rrs--options-visible .rrs__label {
+  border-radius: 4px 4px 0 0;
+}
+.rrs--has-changed .rrs__label {
+  color: #0273b5;
+}
+/*
+  Multiselect overrides
+*/
+.rrs__multiselect-label {
+  display: inline-flex;
+  max-width: 100%;
+  line-height: 1;
+}
+.rrs__multiselect-label__text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.rrs__multiselect-label__badge {
+  border: 1px solid #ccc;
+  padding: 1px 6px;
+  margin: 0 0 0 4px;
+  border-radius: 8px;
+  color: #666;
+  font-size: 11px;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* 
+  Checkbox
+*/
+.rrs .checkbox {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  border: 1px solid #ccc;
+  margin: 2px 8px 2px 0;
+  border-radius: 4px;
+}
+.rrs__option.rrs__option--selected .checkbox {
+  border: 1px solid #0273b5;
+}
+.rrs .checkbox-icon {
+  fill: transparent;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+}
+.rrs__option.rrs__option--selected .checkbox-icon {
+  fill: #0273b5;
+}
+/*
+  Caret Icon
+*/
+.rrs .caret-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1.25rem;
+  fill: #333;
+}
+.rrs--options-visible .caret-icon {
+  transform: rotate(180deg);
+}
+
+/* OPTIONAL - animate opening of the options panel */
+.react-autosuggest__suggestions-container--open {
+  opacity: 1;
+  max-height: 300px;
+}
+
+/* .search-form overrides */
+.search-form .rrs__label {
+  height: 56px;
+  line-height: 56px;
+}
+
+.search-form .rrs__select {
+  max-width: 250px;
+}
+
+.search-form .rrs {
+  width: 205px;
+}
+
+.search-form .rrs__button + .rrs__options {
+  top: 56px;
+}

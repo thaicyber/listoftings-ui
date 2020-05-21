@@ -1,0 +1,21 @@
+module.exports = {
+  DEFAULT_REGION: 'New-Zealand',
+  REGION_OPTIONS: [
+    { value: 'New-Zealand', text: 'New Zealand' },
+    { value: 'Northland', text: 'Northland' },
+    { value: 'Auckland', text: 'Auckland' },
+    { value: 'Waikato', text: 'Waikato' },
+    { value: 'Bay-Of-Plenty', text: 'Bay Of Plenty' },
+    { value: 'Gisborne', text: 'Gisborne' },
+    { value: 'Hawkes-Bay', text: 'Hawke\'s Bay' },
+    { value: 'Taranaki', text: 'Taranaki' },
+    { value: 'Manawatu-Wanganui', text: 'Manawatu / Wanganui' },
+    { value: 'Wellington', text: 'Wellington' },
+    { value: 'Nelson-Tasman', text: 'Nelson / Tasman' },
+    { value: 'Marlborough', text: 'Marlborough' },
+    { value: 'West-Coast', text: 'West Coast' },
+    { value: 'Canterbury', text: 'Canterbury' },
+    { value: 'Otago', text: 'Otago' },
+    { value: 'Southland', text: 'Southland' },
+  ],
+};
